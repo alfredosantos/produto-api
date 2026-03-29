@@ -177,8 +177,8 @@ Este projeto foi desenvolvido como **Desafio Final do Bootcamp de Arquiteto(a) d
    - ✅ README.md - Guia de uso
     - ✅ docs/produto-api-base.drawio.pdf - Diagrama arquitetural exportado
     - ✅ docs/diagrams/produto-api-base.drawio - Fonte dos diagramas no Draw.io
-    - ✅ docs/Estrutura de pastas do projeto MVC.docx - Entregável de estrutura MVC
-    - ✅ docs/Explicação da Estrutura e dos Elementos que Comporão o Código.docx - Entregável de explicação do código
+    - ✅ docs/Estrutura de pastas do projeto MVC.docx - Documento de estrutura MVC
+    - ✅ docs/Explicação da Estrutura e dos Elementos que Comporão o Código.docx - Documento de explicação do código
     - ✅ postman/README.md - Guia da coleção Postman
    - ✅ requests.http - Exemplos de requisições
 
@@ -187,8 +187,8 @@ Este projeto foi desenvolvido como **Desafio Final do Bootcamp de Arquiteto(a) d
 #### Veja também:
 - **[`docs/produto-api-base.drawio.pdf`](./docs/produto-api-base.drawio.pdf)** - Diagrama arquitetural em PDF
 - **[`docs/diagrams/produto-api-base.drawio`](./docs/diagrams/produto-api-base.drawio)** - Arquivo editável no Draw.io
-- **[`docs/Estrutura de pastas do projeto MVC.docx`](./docs/Estrutura%20de%20pastas%20do%20projeto%20MVC.docx)** - Entregável 2
-- **[`docs/Explicação da Estrutura e dos Elementos que Comporão o Código.docx`](./docs/Explicação%20da%20Estrutura%20e%20dos%20Elementos%20que%20Comporão%20o%20Código.docx)** - Entregável 3
+- **[`docs/Estrutura de pastas do projeto MVC.docx`](./docs/Estrutura%20de%20pastas%20do%20projeto%20MVC.docx)** - Estrutura de pastas do projeto MVC
+- **[`docs/Explicação da Estrutura e dos Elementos que Comporão o Código.docx`](./docs/Explicação%20da%20Estrutura%20e%20dos%20Elementos%20que%20Comporão%20o%20Código.docx)** - Explicação da estrutura e dos elementos do código
 - **[`postman/README.md`](./postman/README.md)** - Guia de testes no Postman
 
 #### Estrutura de Responsabilidades
