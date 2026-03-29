@@ -1,0 +1,114 @@
+<mxfile host="app.diagrams.net" modified="2026-03-29T20:15:00.000Z" agent="Mozilla/5.0" version="24.7.17" editor="diagramly" compressed="false">
+  <diagram id="c4-contexto" name="C4 - Contexto">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Produto API - Contexto" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Clientes HTTP&#xa;- Postman&#xa;- Browser&#xa;- App Mobile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="70" y="180" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Produto API&#xa;Spring Boot + Kotlin&#xa;Arquitetura MVC&#xa;CRUD / busca / contagem&#xa;Swagger em /docs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="430" y="150" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="H2 Database&#xa;Banco em memória&#xa;Tabela: produtos" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="860" y="180" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="HTTP/JSON" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="JPA / Hibernate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Observação: os clientes consomem os endpoints em /api/produtos e podem consultar a documentação em /docs." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="380" y="390" width="420" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="c4-containers" name="C4 - Containers">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10" value="Produto API - Containers" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Cliente HTTP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="ProdutoController&#xa;@RestController&#xa;GET / POST / PUT / DELETE&#xa;/api/produtos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="250" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="GlobalExceptionHandler&#xa;@RestControllerAdvice&#xa;Padronização de erros" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="280" y="310" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="ProdutoService&#xa;@Service&#xa;Lógica de negócio&#xa;CRUD / busca / contagem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="620" y="170" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="ProdutoRepository&#xa;JpaRepository&lt;Produto, Long&gt;&#xa;findByNomeContainingIgnoreCase()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="930" y="170" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="H2 Database&#xa;Tabela produtos" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="180" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="HTTP/JSON" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=13;" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="chama" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=13;" edge="1" parent="1" source="12" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="chama" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=13;" edge="1" parent="1" source="14" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="JPA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=13;" edge="1" parent="1" source="15" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="intercepta exceções" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;fontSize=13;" edge="1" parent="1" source="13" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uml-classes" name="UML - Classes">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="30" value="Produto API - UML de Classes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="ProdutoController|+ listarTodos()&#xa;+ contarProdutos()&#xa;+ buscarPorId(id)&#xa;+ buscarPorNome(nome)&#xa;+ criar(request)&#xa;+ atualizar(id, request)&#xa;+ deletar(id)" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=0;startSize=28;rounded=0;shadow=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="250" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="ProdutoService|+ listarTodos()&#xa;+ contarProdutos()&#xa;+ buscarPorId(id)&#xa;+ buscarPorNome(nome)&#xa;+ criar(produto)&#xa;+ atualizar(id, produto)&#xa;+ deletar(id)" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=0;startSize=28;rounded=0;shadow=0;html=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="390" y="120" width="250" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="ProdutoRepository|+ findAll()&#xa;+ count()&#xa;+ findById(id)&#xa;+ findByNomeContainingIgnoreCase(nome)&#xa;+ save(produto)&#xa;+ deleteById(id)" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=0;startSize=28;rounded=0;shadow=0;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="720" y="120" width="270" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="Produto|id: Long?&#xa;nome: String&#xa;descricao: String&#xa;preco: BigDecimal&#xa;quantidade: Int&#xa;dataCriacao: LocalDateTime&#xa;dataAtualizacao: LocalDateTime" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=0;startSize=28;rounded=0;shadow=0;html=1;whiteSpace=wrap;fillColor=#f8f8f8;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="120" width="270" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="GlobalExceptionHandler|+ handleGlobalException(ex, request)" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=0;startSize=28;rounded=0;shadow=0;html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="390" y="390" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="36" value="usa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=13;" edge="1" parent="1" source="31" target="32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="37" value="usa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=13;" edge="1" parent="1" source="32" target="33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="38" value="gerencia" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=13;" edge="1" parent="1" source="33" target="34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="39" value="trata exceções" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;fontSize=13;" edge="1" parent="1" source="35" target="31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+

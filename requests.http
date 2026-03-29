@@ -1,0 +1,58 @@
+### Produto API - Exemplos de Requisições
+
+@baseUrl = http://localhost:8080
+
+### Swagger UI
+GET {{baseUrl}}/docs
+
+### OpenAPI Spec (JSON)
+GET {{baseUrl}}/docs/api-docs
+
+### 1. Criar um novo produto
+POST {{baseUrl}}/api/produtos
+Content-Type: application/json
+
+{
+  "nome": "Notebook Dell",
+  "descricao": "Notebook Dell Inspiron 15, Intel Core i5, 8GB RAM, 256GB SSD",
+  "preco": 3500.00,
+  "quantidade": 10
+}
+
+### 2. Criar outro produto
+POST {{baseUrl}}/api/produtos
+Content-Type: application/json
+
+{
+  "nome": "Mouse Logitech",
+  "descricao": "Mouse sem fio Logitech MX Master 3S",
+  "preco": 299.90,
+  "quantidade": 25
+}
+
+### 3. Listar todos os produtos
+GET {{baseUrl}}/api/produtos
+
+### 4. Buscar produto por ID
+GET {{baseUrl}}/api/produtos/1
+
+### 5. Buscar produtos por nome
+GET {{baseUrl}}/api/produtos/buscar/notebook
+
+### 6. Atualizar produto
+PUT {{baseUrl}}/api/produtos/1
+Content-Type: application/json
+
+{
+  "nome": "Notebook Dell - Atualizado",
+  "descricao": "Notebook Dell Inspiron 15 com melhorias",
+  "preco": 3200.00,
+  "quantidade": 8
+}
+
+### 7. Deletar produto
+DELETE {{baseUrl}}/api/produtos/2
+
+### 8. Tentar buscar produto inexistente
+GET {{baseUrl}}/api/produtos/999
+
